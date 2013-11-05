@@ -57,7 +57,7 @@ void specialFunc( int, int, int );
 
 #define GRIDWIDTH 32
 #define GRIDHEIGHT 32
-#define GRIDDEPTH 64
+#define GRIDDEPTH 32
 
 // width and height
 GLsizei g_width = 1024;
@@ -471,7 +471,7 @@ void displayFunc( )
             vuGrids[i]->updateBuffer(g_prevBuffers[i]);
         }
         
-        glTranslatef(-1.5,-1.5,0);
+        glTranslatef(-1.6,-1.5,0);
         for(int i = GRIDDEPTH - 1; i >= 0; i--)
         {
             vuGrids[i]->drawMe();
