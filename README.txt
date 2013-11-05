@@ -43,7 +43,7 @@ start by running the command "make"
 
 ----------
 
-then run the binary "./vMeter"
+then run the binary "./voxelMeter"
 
 ----------
 
@@ -65,13 +65,3 @@ which can have position, color, alpha updating on a per block basic via an array
 
 This current iteration then uses the column class to render a grid of voxels.  A color
 is initialized for all cubes at init.  Alpha is updated on a per frame basis based on an fft.
-
-===================================================================================
-                    
-                                        Next?
-
-===================================================================================
-
-First I would like to abstract grid and use that instead of column.  
-I would like to make this into a cube that presents data similar to a waterfall.
-I would also like make it explode on large transients.
