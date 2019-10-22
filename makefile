@@ -10,7 +10,7 @@ LIBS=-lasound -lpthread -ljack -lstdc++ -lm \
 	-lGL -lGLU -lglut
 endif
 ifeq ($(UNAME), Darwin)
-FLAGS=-D__MACOSX_CORE__ -c -g
+FLAGS=-D__MACOSX_CORE__ -c -g -Wno-deprecated-declarations
 LIBS=-framework CoreAudio -framework CoreMIDI -framework CoreFoundation \
 	-framework IOKit -framework Carbon  -framework OpenGL \
 	-framework GLUT -framework Foundation \
